@@ -18,8 +18,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      initialRoute: homeRoute,
-      onGenerateRoute: createRoute,
+      
     );
   }
 }
