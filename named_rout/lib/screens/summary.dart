@@ -52,17 +52,7 @@ class _ListTile extends StatefulWidget {
 }
 
 class __ListTileState extends State<_ListTile> {
-  void _navigate() async {
-    final result = await Navigator.pushNamed(
-      context,
-      detailsRoute,
-      arguments: Assessment.copy(widget.assessments[widget.index]),
-    );
-
-    if (result != null && result is Assessment) {
-      setState(() => widget.assessments[widget.index] = result);
-    }
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +68,7 @@ class __ListTileState extends State<_ListTile> {
           style: const TextStyle(color: Colors.white),
         ),
       ),
-      onTap: () => _navigate(),
+      onTap: () {},
     );
   }
 }
